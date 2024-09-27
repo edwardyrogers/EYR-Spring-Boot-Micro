@@ -1,6 +1,6 @@
 package com.eyr.demo.micro.common.models
 
-import com.eyr.demo.common.constants.ReturnCode
+import com.eyr.demo.micro.common.constants.ReturnCode
 import com.fasterxml.jackson.annotation.JsonProperty
 import java.time.Instant
 

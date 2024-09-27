@@ -1,4 +1,4 @@
-package com.eyr.demo.common.constants
+package com.eyr.demo.micro.common.constants
 
 enum class ReturnCode(
     val code: String,
