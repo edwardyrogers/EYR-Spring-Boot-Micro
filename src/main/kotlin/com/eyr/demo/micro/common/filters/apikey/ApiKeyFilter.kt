@@ -1,5 +1,6 @@
 package com.eyr.demo.micro.common.filters.apikey
 
+import cc.worldline.common.HsbcKeyUtil
 import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse
@@ -15,7 +16,7 @@ class ApiKeyFilter : OncePerRequestFilter() {
     ) {
         val requestApiKey = request.getHeader("X-API-KEY")
 
-        if (requestApiKey == null || requestApiKey != "ApiKey") {
+        if (requestApiKey == null || requestApiKey != HsbcKeyUtil.getApiKey()) {
             response.status = HttpServletResponse.SC_UNAUTHORIZED
             return
         }

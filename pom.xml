@@ -87,6 +87,12 @@
 			<groupId>org.jetbrains.kotlin</groupId>
 			<artifactId>kotlin-stdlib</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>cc.worldline.common</groupId>
+			<artifactId>hsbc-backend-util</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
